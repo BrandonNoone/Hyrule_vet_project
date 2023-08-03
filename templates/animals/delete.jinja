@@ -1,0 +1,15 @@
+{% extends 'base.jinja' %}
+{% block content %}
+
+{% for animal in animals %}
+    <li>
+    {{ animal.name }}
+    </li>
+    <form action="/animals/{{ animal.id }}/delete" method="post">
+        <input type="submit" value="delete"/>
+    </form>
+{% endfor %}
+
+
+    
+{% endblock content %}

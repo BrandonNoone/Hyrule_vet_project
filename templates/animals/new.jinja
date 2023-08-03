@@ -1,0 +1,48 @@
+{% extends 'base.jinja' %}
+{% block content %}
+    <h1 class="titles">New animal</h1>
+
+<form action="/animals/new" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text"
+        id="name"
+        name="name"
+        required
+        autofocus
+        />
+    </div>
+    <div>
+        <label for="species">Species:</label>
+        <input type="text" 
+        name="species" 
+        id="species"
+        required
+        />
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="text"
+        name="age" 
+        id="age"
+        />
+    </div>
+    <div>
+        <label for="owner">Owner:</label>
+        <input type="text"
+        name="owner"
+        />
+    </div>
+    {# <div>
+        <label for="vet_id">Vet:</label>
+        <select name="vet_id" id="vet_id">
+        {% for vet_id in vet_ids %}
+        <option value="{{ vet_id }}"> {{ vet.name }}</option>
+        
+        {% endfor %}
+        </select> #}
+{# put stuff into the drop down box #}
+    </div>
+    <button type="submit">Register</button>
+</form>
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+    <h1 class="main_titles" >Animal Profile</h1>
+    <ul class="show_animal">
+        
+        <div class="show_name"><strong>Name:</strong><i>{{ animal.name }}</i></div>
+        <div class="show_species"><strong>Species:</strong><i>{{animal.species}}</i></div>
+        <div class="show_age"><strong>Age:</strong><i>{{ animal.age }}</i></div>
+        <div class="show_owner"><strong>Owner:</strong><i>{{ animal.owner }}</i></div>
+        
+    </ul>
+    <button class="update_buttons"><a href="/animals/{{ animal.id }}/update">Update</a></button>
+{% endblock content %}

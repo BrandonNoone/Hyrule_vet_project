@@ -1,0 +1,25 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+<section class="hero">
+    <h1 class="main_titles">ANIMALS</h1>
+        <ul class="home_buttons_block">
+        <button class="home_buttons"><a href="/">Home</a></button>
+        <button class="home_buttons"><a href="/vets">Vets</a></button>
+        <button class="home_buttons"><a href="/locations">Location</a></button>
+        </ul>
+
+{% for animal in animals %}
+    <ul class="animal_info"> <strong> Name:</strong>{{ animal.name }}<strong></ul>
+    <ul class="animal_info">Species:</strong>{{ animal.species }}</ul> 
+    <button class="animal_info_button"><a href="animals/{{animal.id}}/show">Profile</a></button> 
+    <form class="animal_info_button" action="/animals/{{animal.id}}/delete" method="POST"><input class="delete button"type="submit"value="delete"/></form> <hr>
+{% endfor %}
+
+<button class="register_button"><a href="animals/new">Register</a></button>
+
+</ul>
+</section>
+
+{% endblock content %}
+

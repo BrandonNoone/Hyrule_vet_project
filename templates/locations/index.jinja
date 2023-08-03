@@ -1,0 +1,32 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+<section class="hero">
+    <h1 class="main_titles">LOCATION</h1>
+    <ul class="home_buttons_block">
+    <button class="home_buttons"><a href="/">Home</a></button>
+    <button class="home_buttons" ><a href="/vets">Vets</a></button>
+    <button class="home_buttons" ><a href="/animals">Animals</a></button>
+    </ul>
+
+{# {% for location in locations %}
+    <ul>
+    {{ location.name }} 
+    {# <button class="loaction_info_button"><a href="location/{{location.id}}/show">Details</a></button> #}
+    </ul>
+{# {% endfor %} #}
+
+<div class="slider_text">Take a look at some of our STUNNING locations</div>
+
+<section class="slider">
+    <div id="slider">
+        <figure>
+            <img src="/static/images/Gerudo_Town.png">
+            <img src="/static/images/hyruleCastle.jpeg">
+            <img src="/static/images/Kakariko_village.jpeg">
+            <img src="/static/images/Gerudo_Town.png">
+        </figure>
+    </div>
+</section>
+
+{% endblock content %}

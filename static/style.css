@@ -1,0 +1,338 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main_titles{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    font-size: 60px;
+    text-shadow: 1px 1px;
+    z-index: -2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    
+}
+
+.home_buttons_block{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 1%;
+    border-bottom: groove 20px;
+    border-top: groove 20px;
+}
+
+.body{
+    background-color: rgb(195, 193, 132);
+}
+
+/* ----------------------------------------LOCATION AREA--------------------------------------- */
+
+.location_home_title{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.location_buttons_block{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/* ----------------------------------------ANIMAL AREA--------------------------------------- */
+
+.home_button_block{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.animal_home_title{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.animal_info{
+    padding: 1%;
+    display: flex;
+    justify-content: center ;
+}
+
+.animal_info_button{
+    display: flex;
+    justify-content: center;
+}
+
+.register_button{
+    display: block;
+    align-items: center;
+}
+
+.show_animal{
+    padding-top: 5%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    border-top: groove 20px;
+    font-size: x-large;
+}
+
+/* -----------------------------------------VETS AREA---------------------------------------------- */
+
+.vets_para{
+    text-align: center;
+    padding: 10%;
+    background-color: rgb(255, 255, 255);
+}
+
+.vet_home_title{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.vet_buttons_block{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.hero{
+    background-color: rgb(195, 193, 132);
+}
+
+
+
+
+
+
+.update_animal_title{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.new_animal_title{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.titles{
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color:rgb(0, 0, 0);
+}
+
+.header{
+    width: 100%;
+    background-color: rgb(195, 193, 132);
+}
+
+.main_section{
+    display: flex;
+    z-index: -3;
+    height: 50%;
+}
+
+
+.home_page_content{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.body{
+    background-image: url('/static/images/hyrule.jpeg');
+}
+
+.home_buttons{
+    display: flex;
+    justify-content: center;
+}
+
+* {box-sizing:border-box}
+
+
+#parent {position: relative;}
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    width: 20%;
+    float: left;
+}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    90%{
+        left: -300%;
+    }
+    100%{
+        left: -400;
+    }
+}
+
+.slider_text{
+    color:white;
+    text-shadow: 5px 5px 15px;
+    position: absolute;
+    top: 70%;
+    left: 1%;
+    transform: rotateZ(-30deg);
+    z-index: 3;
+    font-size: x-large;
+    font-weight: bolder;
+    border: 20px solid rgb(210, 123, 76);
+    background-color: rgb(210, 123, 76);
+    border-radius: 30px;
+}
+
+
+#parent{position: relative;}
+.home_background{
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.logo_image{
+    display: flex;
+    align-self: flex-start;
+    padding: 5%;
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    z-index: 1;
+}
+
+.main_text{
+    color:black;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    font-size: 40px;
+    text-shadow: 5px 5px 8px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.vets_photo{
+    height: 65vh;
+    width: 25%;
+    border: 20px solid ;
+    border-radius: 30px;
+    border-bottom: 150px solid;
+    border-color: rgb(219, 145, 91);
+    position: absolute;
+    top: 20%;
+    left: 5%;
+}
+
+.vets_photo_1{
+    height: 65vh;
+    width: 25%;
+    border: 20px solid ;
+    border-radius: 30px;
+    border-bottom: 150px solid;
+    border-color: rgb(219, 145, 91);
+    position: absolute;
+    top: 20%;
+    left: 37%;
+}
+
+.vets_photo_2{
+    height: 65vh;
+    width: 25%;
+    border: 20px solid ;
+    border-radius: 30px;
+    border-bottom: 150px solid;
+    border-color: rgb(219, 145, 91);
+    position: absolute;
+    top: 20%;
+    left: 70%;
+}
+
+.vet_name{
+    position: absolute;
+    top: 70%;
+    left: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+.vet_location{
+    position: absolute;
+    top: 75%;
+    left: 13%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.vet_name_1{
+    position: absolute;
+    top: 70%;
+    left: 45%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+.vet_location_1{
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.vet_name_2{
+    position: absolute;
+    top: 70%;
+    left: 77%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+}
+
+.vet_location_2{
+    position: absolute;
+    top: 75%;
+    left: 78%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+

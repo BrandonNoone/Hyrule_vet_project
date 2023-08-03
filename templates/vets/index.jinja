@@ -1,0 +1,36 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+<section class="hero">
+<div>
+    <h1 class="main_titles" >VETS</h1>
+    <ul class="home_buttons_block">
+    <button class="home_buttons"><a href="/">Home</a></button>
+    <button class="home_buttons" ><a href="/animals">Animals</a></button>
+    <button class="home_buttons" ><a href="/locations">Locations</a></button>
+    </ul>
+</div>
+</section>
+
+
+{# {% for vet in vets %}
+    <ul>
+    {{ vet.name }}, {{ vet.location.name }}
+    </ul>
+{% endfor %} #}
+<div id="parent">
+    <img class="vets_photo" src="/static/images/vets/tingle.jpeg" alt="vet">
+    <img class="vets_photo_1" src="/static/images/vets/dr-borville.jpeg" alt="vet">
+    <img class="vets_photo_2" src="/static/images/vets/big gorons.jpeg" alt="vet">
+    
+    <p class="vet_name"> <strong>Tingle</strong> </p>
+    <p class="vet_name_1"> <strong>Dr.Borville</strong></p>
+    <p class="vet_name_2"> <strong>Dr.Big Goron</strong></p>
+    <p class="vet_location"><strong>Gerudo Deserts Vets</strong></p>
+    <p class="vet_location_1"><strong>Hyrule Castle Vets</strong></p>
+    <p class="vet_location_2"><strong>Kakariko village Vets</strong></p>
+    <img class="home_background" src="/static/images/hyrule.jpeg" alt="background img">
+</div>
+
+{% endblock content %}
+

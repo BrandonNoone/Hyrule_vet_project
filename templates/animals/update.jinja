@@ -1,0 +1,45 @@
+{% extends 'base.jinja' %}
+
+{% block content %}
+
+    <h1 class="titles">Update {{animal.name}} profile</h1>
+
+<form action="/animals/{{ animal.id }}/update" method="post">
+    <div>
+    <label for="name">Name:</label>
+    <input type="text" 
+        name="name" 
+        id="name"
+        value="{{animal.name}}"
+        />
+    </div>
+    <div>
+        <label for="species">Species:</label>
+        <input type="text" 
+        name="species" 
+        id="species"
+        value="{{animal.species}}"
+        />
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <input type="text"
+        name="age" 
+        id="age"
+        value="{{animal.age}}"
+        />
+    </div>
+    <div>
+        <label for="owner">Owner:</label>
+        <input type="text"
+        name="owner"
+        value="{{animal.owner}}"
+        />
+    </div>
+    
+    <button type="submit">Update</button>
+</form>
+
+    {#  Add a form (like the new form) but the input values will 
+    be populate from animal object #}
+{% endblock content %}

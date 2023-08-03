@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyrule Health Care</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='buttons.css') }}">
+</head>
+<body>
+<section class="header">
+<img class="logo_image" src="/static/images/greencircle.png" alt="logo">
+<img class="logo_image" src="/static/images/pngegg.png" alt="logo">
+</section>
+    {% block content %}
+        
+    {% endblock content %}
+</body>
+</html>
